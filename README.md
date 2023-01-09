@@ -6,6 +6,12 @@ I used Entity Framework Core for database connection (SQL Server). Connection is
 Repository is generic with common methods: add, get, get all, remove, remove range. Specific repositories have other methods.
 UnitOfWork is container for repositories and it is inject in Program.cs file. 
 
+Technology:
+- .NET 6.0 
+- C#
+- ASP .NET CORE MVC 
+- EF Core 7.0.1
+
 Architecture (n-tier)
 - ASP.NetCMS_Cart - controllers, views, static files
 - DataAccess - dataBase context, migrations, repository and unitOfWork patterns, Models prepared for views
