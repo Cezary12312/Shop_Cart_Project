@@ -1,0 +1,26 @@
+﻿@model Product
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-3">
+            <h2 class="text-primary">Produkt</h2>
+            <hr />
+        </div>
+        <input type="hidden" asp-for="Id" />
+        <div asp-validation-summary="All"></div>
+        <div class="row mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <button class="btn btn-danger" type="submit">Usuń</button>
+    </div>
+    <a asp-action="Index" asp-controller="Category">Powrót</a>
+</form>
+@section scripts
+    {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
+

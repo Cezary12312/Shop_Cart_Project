@@ -1,0 +1,15 @@
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.AssemblyInfo.cs
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.deps.json
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.dll
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.pdb
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Models.dll
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Models.pdb
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.CopyComplete
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.dll
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\refint\ShoppingCart.DataAccess.dll
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.pdb
+C:\Users\Cezar\source\repos\ASP.NetCMS_Cart\ShoppingCart.DataAccess\obj\Debug\net6.0\ref\ShoppingCart.DataAccess.dll

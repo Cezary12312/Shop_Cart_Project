@@ -1,0 +1,32 @@
+﻿@model ShoppingCart.Models.Cart
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Szczegóły</h1>
+<form method="post">
+    <div class="row">
+        <div class="col-4">
+            <img src="@Model.Product.ImageUrl" width="200" height="200" />
+            <input type="hidden" asp-for="ProductId" />
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <label asp-for="Product.Name">Nazwa Produktu: @Model.Product.Name</label>
+                <label asp-for="Product.Description">Opis: @Model.Product.Description</label>
+                <label asp-for="Product.Price">Cena: @Model.Product.Price</label>
+                <label asp-for="Product.Category.Id">Kategoria: @Model.Product.Category</label>
+                <div class="form-control">
+                    <label asp-for="Count"></label>
+                    <input asp-for="Count" class="form-control" />
+                    <span asp-validation-for="Count" class="text-danger"></span>
+                </div>
+                <div class="form-control">
+                    <button class="btn btn-success" asp-action="Index" asp-controller="Home">Powrót</button>
+                    <button type="submit" class="btn btn-dark">Dodaj do koszyka</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

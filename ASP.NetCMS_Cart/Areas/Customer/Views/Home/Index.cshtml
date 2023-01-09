@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ShoppingCart.Models.Product>
+
+@{
+    ViewData["Title"] = "Witaj!";
+}
+
+<div class="row pb-4">
+    @foreach(var item in Model)
+    {
+        <div class="card" style="width: 18rem; height: 100%">
+            <img class="card-img-top" style="max-height: 300px; min-height: 300px" src="@item.ImageUrl" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <p class="card-text">Cena: @item.Price.ToString("0.00")</p>
+                <a asp-action="Details" asp-controller="Home" asp-route-productId="@item.Id" class="btn btn-primary">Zobacz szczegóły</a>
+            </div>
+        </div>
+    }
+</div>

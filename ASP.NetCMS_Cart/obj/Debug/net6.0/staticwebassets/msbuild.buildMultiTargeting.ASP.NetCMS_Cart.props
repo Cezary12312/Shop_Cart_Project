@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ASP.NetCMS_Cart.props" />
+</Project>

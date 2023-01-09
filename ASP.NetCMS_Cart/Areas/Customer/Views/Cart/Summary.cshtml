@@ -1,0 +1,77 @@
+﻿@model ShoppingCart.DataAccess.ViewModels.CartVM
+
+<form method="post">
+    <div class="row">
+        <div class="col-md-8 mb-4">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h5 class="mb-0">Szczegóły dostawy</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" asp-for="@Model.ItemOrderHeader.Name" class="form-control"/>
+                                <label class="form-label" for="form7Example1">Nazwa</label>
+                            </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="number" asp-for="@Model.ItemOrderHeader.Phone" class="form-control" />
+                            <label class="form-label" for="form7Example6">Numer telefonu</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <textarea asp-for="@Model.ItemOrderHeader.Address" class="form-control" rows="4"></textarea>
+                            <label class="form-label" for="form7Example7">Adres</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" asp-for="@Model.ItemOrderHeader.City" class="form-control" />
+                            <label class="form-label" for="form7Example6">Miasto</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" asp-for="@Model.ItemOrderHeader.State" class="form-control" />
+                            <label class="form-label" for="form7Example6">Województwo</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="number" asp-for="@Model.ItemOrderHeader.PostalCode" class="form-control" />
+                            <label class="form-label" for="form7Example6">Kod pocztowy</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h5 class="mb-0">Podsumowanie</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group=flush">
+                        @foreach(var item in Model.ListOfCart)
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                <span>@item.Product.Name</span>
+                                <span>ilość: @item.Count</span>
+                                <span>@(((item.Product.Price)*(item.Count)).ToString("c"))</span>
+                            </li>
+                        }
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                            <div>
+                                <strong>Suma</strong>
+                                <strong>
+                                    <p class="mb-0">(Zawiera VAT)</p>
+                                </strong>
+                            </div>
+                            <span><strong>@Model.ItemOrderHeader.OrderTotal.ToString("c")</strong></span>
+                        </li>
+                    </ul>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Zakup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
