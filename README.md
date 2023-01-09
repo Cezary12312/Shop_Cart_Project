@@ -11,6 +11,7 @@ Technology:
 - C#
 - ASP .NET CORE MVC 
 - EF Core 7.0.1
+- Visual Studio 
 
 Architecture (n-tier)
 - ASP.NetCMS_Cart - controllers, views, static files
