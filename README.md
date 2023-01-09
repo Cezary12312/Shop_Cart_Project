@@ -23,3 +23,5 @@ Requirements:
 - DRY
 - KISS
 - CLEAN CODE
+
+!!! Login by: email - admin@gmail.com, password - Admin@123 !!!
