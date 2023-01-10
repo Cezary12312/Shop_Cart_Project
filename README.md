@@ -18,6 +18,7 @@ Architecture (n-tier)
 - DataAccess - dataBase context, migrations, repository and unitOfWork patterns, Models prepared for views
 - Models - domain models for reality modeling
 - Utility - useful enumerations and classes(email sender, roles)
+
 Requirements:
 - SOLID 
 - DRY
